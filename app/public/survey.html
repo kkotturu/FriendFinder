@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Place Finder</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+
+	<!-- Bootstrap section -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Font Glyphicons -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+	<!-- Make final css adjustments with personal stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/survey.css">
+
+</head>
+
+<body>
+
+	<!-- first a navbar , not used, adds nice visual touch -->
+	<nav class="navbar navbar-default" id="nav-style">
+		<p class="navbar-text">
+			<h2 class="text-center">Friendly Place Finder Survey Questions</h2>
+		</p>
+	</nav>
+
+	<!-- begin the bootstrap container -->
+	<div class="container">
+		<div class="form-group">
+			<h3><strong>Question 1</strong></h3>
+			<h4>With whom do you travel mostly?</h4>
+			<select data-placeholder="" class="chosen-select" id="q1">
+				<option value=""></option>
+				<option value="1">Family</option>
+				<option value="2">Friends</option>
+				<option value="3">Colleagues</option>
+				<option value="4">Alone</option>
+				<option value="5">No Travel</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			<h3><strong>Question 2</strong></h3>
+			<h4>How often do you travel outside of the country?</h4>
+			<select data-placeholder="" class="chosen-select" id="q2">
+				<option value=""></option>
+				<option value="1">Once in a Year</option>
+				<option value="2">Once in 6 Months</option>
+				<option value="3">Once in 3 Months</option>
+				<option value="4">Every Month</option>
+				<option value="5">Every Week</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			<h3><strong>Question 3</strong></h3>
+			<h4>Where do you go most often?</h4>
+			<select data-placeholder="" class="chosen-select" id="q3">
+				<option value=""></option>
+				<option value="1">Hill stations</option>
+				<option value="2">Beaches</option>
+				<option value="3">Deserts</option>
+				<option value="4">Historically Significant</option>
+				<option value="5">Busy Cities</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			<h3><strong>Question 4</strong></h3>
+			<h4>What is the length of the trip?</h4>
+			<select data-placeholder="" class="chosen-select" id="q4">
+				<option value=""></option>
+				<option value="1">Weekend</option>
+				<option value="2">1-5 days</option>
+				<option value="3">A week</option>
+				<option value="4">A fortnight</option>
+				<option value="5">A month</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			<h3><strong>Question 5</strong></h3>
+			<h4>How much do you spend on a trip?</h4>
+			<select data-placeholder="" class="chosen-select" id="q5">
+				<option value=""></option>
+				<option value="1">Upto 5,000</option>
+				<option value="2">5,000 - 10,000</option>
+				<option value="3">10,000 - 15,000</option>
+				<option value="4">15,000 - 20,000</option>
+				<option value="5">Above 20,000</option>
+			</select>
+		</div>
+
+		<br>
+
+		<!-- Submit Button -->
+		<button type="submit" class="btn btn-primary btn-lg" id="submit">
+			<i class="fa fa-check-circle" aria-hidden="true"></i> Submit</button>
+
+	</div>
+
+	<!-- Modal -->
+	<div id="resultsModal" class="modal">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h2 class="modal-title"><strong>Best place to visit:</strong></h2>
+				</div>
+				<div class="modal-body">
+					<h2 id="matchName"></h2>
+					<img id="matchImg" class="img-responsive" src="https://i.stack.imgur.com/WOlr3.png" alt="">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" id="btn-style" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- bottom navbar functioning as footer -->
+	<nav class="navbar navbar-default navbar-fixed-bottom">
+		<div class="container vertical_alignment">
+			<p class="text-center"><a href="/api/friends" target="_blank">API Place List</a> | <a
+					href="https://github.com/kkotturu/FriendFinder" target="_blank">GitHub Repo</a> | <a
+					href="home.html">Home</a>
+			</p>
+		</div>
+	</nav>
+
+	<!-- Link to jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+
+
+	<!-- javascript for this page-->
+	<script src="js/survey.js"></script>
+
+</body>
+
+</html>

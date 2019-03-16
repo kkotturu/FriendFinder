@@ -1,0 +1,55 @@
+/*optional css for survey page*/
+
+body {
+	padding-bottom: 150px;
+	font-family: 'Times New Roman', Times, serif;
+	background-color: 	rgb(250, 158, 135);
+
+}
+#nav-style {
+	border-bottom: 3px solid rgb(250, 158, 135);
+	background-color: rgb(29, 29, 105);
+	color:white;
+}
+
+h2 {
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.bottom_nav {
+	margin: auto;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.vertical_alignment {
+	height: 50px;
+	line-height: 50px;
+	vertical-align: middle;
+}
+
+#btn-style{
+	margin:10px;
+	font-family: 'Times New Roman', Times, serif;
+	
+}
+
+#submit{
+	background-color: rgb(29, 29, 105);
+	color: white;
+}
+
+a{
+	color:white;
+}
+
+.navbar-fixed-bottom{
+	background-color: rgb(29, 29, 105);
+}
+h3, h4{
+	font-family: 'Times New Roman', Times, serif;
+	color:rgb(29, 29, 105);
+
+}
+p{
+	color:white;
+}

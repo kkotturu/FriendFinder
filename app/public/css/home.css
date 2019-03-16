@@ -1,0 +1,61 @@
+/*optional css for home page*/
+
+body {
+	padding-bottom: 150px;
+	font-family: 'Times New Roman', Times, serif;
+	background-color: 	white;
+}
+#nav-style {
+	border-bottom: 3px solid rgb(250, 158, 135);
+	background-color: rgb(29, 29, 105);
+}
+
+h1{
+	font-family: 'Times New Roman', Times, serif;
+	
+}
+
+div.jumbotron {
+	background-color: rgb(245, 161, 140);
+	border-radius: 25px;
+	border: 2px solid white;
+	
+
+}
+h1.text-center{
+	text-shadow: 2px 2px rgb(29, 29, 105);
+}
+
+#btn-style{
+	color:rgb(250, 158, 135);
+	border-radius: 25px;
+	border: 2px solid rgb(250, 158, 135); 
+	background-color: rgb(29, 29, 105);
+}
+
+.bottom_nav {
+	margin: auto;
+		
+}
+#jumStyle{
+	margin:100px;
+}
+
+#place-style{
+padding:30px;
+}
+
+.vertical_alignment p{
+	height: 50px;
+	line-height: 50px;
+	vertical-align: middle;
+}
+
+a{
+	color:white;
+}
+
+.navbar-fixed-bottom{
+	border-top: 4px solid rgb(250, 158, 135);
+	background-color: rgb(29, 29, 105);
+}
